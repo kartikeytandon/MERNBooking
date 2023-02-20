@@ -1,0 +1,153 @@
+.hotelContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.2rem;
+}
+.hotelWrapper {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    position: relative;
+}
+.hotelImgWrapper {
+    width: 33%;
+}
+.hotelTitle {
+    font-size: 1.4rem;
+}
+.hotelAddress {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.hotelDistance {
+    color: #0071c2;
+    font-weight: 600;
+}
+.bookNow {
+    position: absolute; 
+    top: 0.4rem;
+    right: 0;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.hotelImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hotelImg {
+    width: 100%;
+    object-fit: cover;
+}
+.hotelDetails {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2rem;
+    margin-top: 1.2rem;
+}
+.hotelDesc {
+    font-size: 0.9rem;
+    margin-top: 1.2rem;
+}
+.hotelDetailsText {
+    flex: 3;
+}
+.hotelDetailsPrice {
+    flex: 1;
+    background-color: #ebf3ff;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.hotelDetailsPrice h1 {
+    font-size: 1.1rem;
+    color: #555;
+}
+.hotelDetailsPrice span {
+    font-size: 0.9rem;
+}
+.hotelDetailsPrice button {
+    border: none;
+    padding: 0.7rem 1.2rem;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.slider {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    /* background-color: rgb(207, 188, 188); */
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.sliderWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sliderImg {
+    width: 80%;
+    height: 80vh;
+}
+.close {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    font-size: 2rem;
+    color: lightgray;
+    cursor: pointer;
+}
+.arrow {
+    margin: 1.2rem;
+    font-size: 2rem;
+    color: lightgray;
+}
+
+@media(max-width: 1144px) {
+    .hotelWrapper {
+        max-width: 700px;
+    }
+}
+@media(max-width: 1023px) {
+    .hotelWrapper {
+        max-width: 700px;
+    }
+    .mailAndFooter {
+        display: none;
+    }
+    .hotelDetails {
+        flex-direction: column;
+    }
+    .bookNow {
+        display: none;
+    }
+}
+@media(max-width: 732px) {
+    .hotelWrapper {
+        max-width: 500px;
+    }
+}
+@media(max-width: 550px) {
+    .hotelWrapper {
+        max-width: 350px;
+    }
+}
